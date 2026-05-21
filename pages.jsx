@@ -467,8 +467,8 @@ const PAGE_LIST = [
           </div>
           <div className="cta-row">
             <a className="btn sm" href="mailto:romain.plane@edu.ece.fr">✉ Email</a>
-            <a className="btn sm ghost" href="#linkedin">in · LinkedIn</a>
-            <a className="btn sm ghost" href="#github">⌥ GitHub</a>
+            <a className="btn sm ghost" href="https://www.linkedin.com/in/romain-plane/">in · LinkedIn</a>
+            <a className="btn sm ghost" href="https://github.com/rom1pln">⌥ GitHub</a>
             <a className="btn sm" href="#cv">↓ Télécharger CV</a>
           </div>
           <div className="signature" style={{ marginTop: 22 }}>Romain Plane</div>
