@@ -691,87 +691,220 @@ function App() {
 function MobileShell() {
   return (
     <div className="mobile-shell">
-      <section>
-        <h1>Romain Plane</h1>
-        <p style={{ color: "var(--gold-soft)", fontStyle: "italic" }}>Étudiant ingénieur · ECE Lyon</p>
-        <p>Entre ingénierie, gestion de projet et engagement étudiant, je conçois des solutions concrètes à fort impact.</p>
-        <div>
-          <span className="pill">Référent ECE</span>
-          <span className="pill">JEECE</span>
-          <span className="pill">CNJE</span>
-          <span className="pill">Corpo OMNES</span>
+
+      {/* ── Header sticky ── */}
+      <header className="mob-header">
+        <div className="mob-brand">R<span>·</span>P</div>
+        <nav className="mob-nav">
+          <a href="#mob-parcours">Parcours</a>
+          <a href="#mob-projets">Projets</a>
+          <a href="#mob-contact">Contact</a>
+          <a href="#mob-contact" className="mob-cv-btn">↓ CV</a>
+        </nav>
+      </header>
+
+      {/* ── Hero ── */}
+      <section className="mob-hero">
+        <p className="mob-eyebrow">Étudiant ingénieur · ECE Lyon · MMXXVI</p>
+        <h1>Romain<br/>Plane.</h1>
+        <p className="mob-lede">
+          Entre ingénierie, gestion de projet et engagement étudiant —
+          je conçois des solutions concrètes à fort impact.
+        </p>
+        <div className="mob-tags">
+          {["Référent ECE", "JEECE", "CNJE", "Corpo OMNES"].map(tag => (
+            <span key={tag} className="mob-tag">{tag}</span>
+          ))}
+        </div>
+        <div className="mob-actions">
+          <a href="mailto:romain.plane@edu.ece.fr" className="mob-btn">✉ Email</a>
+          <a href="https://linkedin.com/in/romain-plane" target="_blank" rel="noopener noreferrer" className="mob-btn ghost">in LinkedIn</a>
+          <a href="https://github.com/rom1pln" target="_blank" rel="noopener noreferrer" className="mob-btn ghost">⌥ GitHub</a>
         </div>
       </section>
 
-      <section>
-        <h2>Parcours</h2>
-        <div className="card-m">
-          <strong>ECE Lyon</strong> - Diplôme d'ingénieur (2023–2029)
-          <p>Cycle prépa intégré, puis cycle ingénieur. C · Python · électronique · projets techniques. Intérêt fort pour le développement web, la data et la gestion de projet.</p>
+      {/* ── Parcours ── */}
+      <section id="mob-parcours" className="mob-section">
+        <p className="mob-eyebrow">I · Parcours</p>
+        <h2>Formation</h2>
+        <div className="mob-card">
+          <strong>ECE Lyon</strong> — Diplôme d'ingénieur (2023–2029)
+          <p>Cycle prépa intégré puis cycle ingénieur. C · Python · électronique · projets techniques.</p>
+        </div>
+        <div className="mob-card">
+          <strong>Référent étudiant ambassadeur</strong> — ECE Lyon
+          <p>Formation des étudiants au fonctionnement et à la promotion de l'école. Ambassadeur réseaux sociaux, oraux d'admission parallèle.</p>
         </div>
       </section>
 
-      <section>
-        <h2>Engagement & leadership</h2>
-        <div className="card-m">
-          <strong>Vice-Président & Trésorier - Corpo OMNES Lyon</strong>
+      {/* ── Engagement ── */}
+      <section className="mob-section">
+        <p className="mob-eyebrow">II · Leadership associatif</p>
+        <h2>Engagement</h2>
+        <div className="mob-card">
+          <strong>Vice-Président & Trésorier</strong> — Corpo OMNES Education Lyon
           <p>Représentation de 6 000+ étudiants. Coordination ECE · ESCE · HEIP · INSEEC · Sup de Pub.</p>
         </div>
-        <div className="card-m">
-          <strong>Fondateur & Président - Inter-Association ECE Lyon</strong>
-          <p>Coordination de 10+ associations. Mise en place d'un cadre fédératif.</p>
+        <div className="mob-card">
+          <strong>Fondateur & Président</strong> — Inter-Association ECE Lyon
+          <p>Coordination de 10+ associations. Mise en place d'un cadre fédératif et organisationnel.</p>
+        </div>
+        <div className="mob-card">
+          <strong>BDE Skyfall</strong> — Secrétaire général · Partenariats · Marketing
+          <p>50+ partenariats signés — +1 000 % vs. année précédente. Staff séminaire d'intégration (800 premières années).</p>
         </div>
       </section>
 
-      <section>
+      {/* ── JEECE ── */}
+      <section className="mob-section">
+        <p className="mob-eyebrow">III · Junior-Entreprise</p>
         <h2>JEECE</h2>
-        <p>Responsable des intervenants · CA · Référent Lyon. Gestion de 60 intervenants, 100+ candidats / an, automatisation du recrutement et de la gestion documentaire. Co-organisation du Congrès Régional Centre-Est 2026 (200 étudiants, 24 écoles).</p>
+        <p className="mob-text">
+          Responsable des intervenants · membre du CA · Référent Campus Lyon · Chef de projet.
+          Automatisation du recrutement, du suivi et de la gestion documentaire.
+        </p>
+        <div className="mob-stats">
+          <div className="mob-stat"><span>60</span>Intervenants</div>
+          <div className="mob-stat"><span>100+</span>Candidats / an</div>
+          <div className="mob-stat"><span>24</span>Écoles au congrès</div>
+          <div className="mob-stat"><span>200</span>Étudiants accueillis</div>
+        </div>
       </section>
 
-      <section>
+      {/* ── CNJE ── */}
+      <section className="mob-section">
+        <p className="mob-eyebrow">IV · Confédération nationale</p>
         <h2>CNJE</h2>
-        <p>Auditeur-Conseil Organisationnel Junior · Formateur RFP. Audit, conseil et formation auprès des Junior-Entreprises affiliées.</p>
-      </section>
-
-      <section>
-        <h2>Projet phare - Plateforme Corpo OMNES Lyon</h2>
-        <p>Plateforme web complète pour centraliser la vie étudiante de 5 écoles et 2 campus (6 000+ étudiants). Billetterie, paiements Stripe/SumUp, QR + wallet, annuaire, boutique, FR/EN, back-office complet.</p>
-        <div>
-          <span className="pill">PHP</span><span className="pill">MySQL</span><span className="pill">JS</span><span className="pill">Stripe</span><span className="pill">SumUp</span>
+        <p className="mob-text">
+          Auditeur-Conseil Organisationnel Junior · Formateur RFP. Accompagnement de Junior-Entreprises
+          dans leur professionnalisation, leur conformité et leur développement.
+        </p>
+        <div className="mob-stats">
+          <div className="mob-stat"><span>4,4%</span>Taux de sélection</div>
+          <div className="mob-stat"><span>1 j.</span>Durée d'un audit</div>
         </div>
       </section>
 
-      <section>
-        <h2>Plateforme d'examen anti-triche</h2>
-        <p>Outil interne JE pour sécuriser les examens : verrouillage fenêtre, contrôle temps, limitation IA. Adopté pour les recrutements 2026.</p>
-      </section>
-
-      <section>
-        <h2>Expérience pro · CGI</h2>
-        <p>Stage janvier - février 2025. Accompagnement d'un directeur conseil & chef de projet. Initiation à Azure, analyse data (Power BI, SQL), conformité réglementaire.</p>
-      </section>
-
-      <section>
+      {/* ── Compétences ── */}
+      <section className="mob-section">
+        <p className="mob-eyebrow">V · Boîte à outils</p>
         <h2>Compétences</h2>
-        <p><strong>Dev :</strong> HTML · CSS · JS · PHP · MySQL · Python · C</p>
-        <p><strong>Data :</strong> SQL · Power BI · Azure · Git</p>
-        <p><strong>Gestion :</strong> pilotage · coord. équipes · relation client · proposition commerciale</p>
-        <p><strong>Leadership :</strong> association · audit · formation · recrutement · événementiel</p>
-        <p><strong>Langues :</strong> Français · Anglais pro · Espagnol B1</p>
+        {[
+          { label: "Développement", tags: ["HTML", "CSS", "JS", "PHP", "MySQL", "Python", "C"] },
+          { label: "Data & outils",  tags: ["SQL", "Power BI", "Azure", "Git", "GitHub"] },
+          { label: "Gestion",        tags: ["Pilotage", "Agile", "Scrum", "Lean", "Commercial"] },
+          { label: "Leadership",     tags: ["Audit", "Formation", "Recrutement", "Événementiel"] },
+          { label: "Langues",        tags: ["🇫🇷 Natif", "🇬🇧 Anglais B2", "🇪🇸 Espagnol B1"] },
+        ].map(({ label, tags }) => (
+          <div key={label} className="mob-skill-group">
+            <div className="mob-skill-label">{label}</div>
+            <div className="mob-skill-tags">
+              {tags.map(t => <span key={t} className="mob-tag">{t}</span>)}
+            </div>
+          </div>
+        ))}
       </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p>Ouvert aux opportunités de stage, projets et collaborations autour de l'ingénierie, du dev web, de la data et de la gestion de projet.</p>
-        <div>
-          <span className="pill">✉ romain.plane@edu.ece.fr</span>
+      {/* ── Projets ── */}
+      <section id="mob-projets" className="mob-section">
+        <p className="mob-eyebrow">VI · Réalisations</p>
+        <h2>Projets</h2>
+
+        <div className="mob-proj-featured">
+          <p className="mob-proj-sub">Projet phare</p>
+          <div className="mob-proj-title">Plateforme Corpo OMNES Lyon</div>
+          <p className="mob-proj-desc">
+            Plateforme web complète pour 6 000+ étudiants sur 5 écoles et 2 campus.
+            Billetterie, paiements Stripe/SumUp, QR + wallet, annuaire, boutique, back-office.
+          </p>
+          <div className="mob-kpis">
+            <span>2 471 billets</span><span>€48k CA</span><span>38 associations</span>
+          </div>
+          <div className="mob-skill-tags" style={{ marginTop: 10 }}>
+            {["PHP", "MySQL", "JS", "Stripe", "SumUp", "Apple Wallet"].map(t => (
+              <span key={t} className="mob-tag">{t}</span>
+            ))}
+          </div>
         </div>
-        <div style={{ marginTop: 10 }}>
-          <span className="pill">in · LinkedIn</span>
-          <span className="pill">⌥ GitHub</span>
-          <span className="pill">↓ CV</span>
+
+        <div className="mob-proj-featured">
+          <p className="mob-proj-sub">Outil interne JEECE</p>
+          <div className="mob-proj-title">Plateforme d'examen anti-triche</div>
+          <p className="mob-proj-desc">
+            Verrouillage fenêtre, limitation IA, contrôle du temps réglementaire.
+            Adopté pour les recrutements JEECE 2026.
+          </p>
+          <div className="mob-skill-tags" style={{ marginTop: 10 }}>
+            {["HTML", "CSS", "JS", "PHP"].map(t => (
+              <span key={t} className="mob-tag">{t}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mob-proj-card" data-proj="homenes">
+          <div className="mob-proj-title">Homenes</div>
+          <p className="mob-proj-desc">Mise en relation logement étudiant · Lyon.</p>
+          <div className="mob-skill-tags" style={{ marginTop: 8 }}>
+            {["HTML", "CSS", "JS", "PHP", "MySQL"].map(t => <span key={t} className="mob-tag">{t}</span>)}
+          </div>
+        </div>
+
+        <div className="mob-proj-card" data-proj="congres">
+          <div className="mob-proj-title">Congrès Régional C.-E. 2026</div>
+          <p className="mob-proj-desc">Co-organisation · 200 étudiants · 24 écoles · Lyon.</p>
+        </div>
+
+        <div className="mob-proj-card" data-proj="digiwake">
+          <div className="mob-proj-title">Digiwake</div>
+          <p className="mob-proj-desc">Projet technique de 1ʳᵉ année · ECE Lyon.</p>
         </div>
       </section>
+
+      {/* ── CGI ── */}
+      <section className="mob-section">
+        <p className="mob-eyebrow">VII · Expérience professionnelle</p>
+        <h2>CGI</h2>
+        <div className="mob-card">
+          <strong>Stage · Janvier – Février 2025</strong>
+          <p>Accompagnement d'un directeur conseil & chef de projet. Azure, Power BI, SQL, conformité réglementaire.</p>
+        </div>
+      </section>
+
+      {/* ── Certifications ── */}
+      <section className="mob-section">
+        <p className="mob-eyebrow">VIII · Formation continue</p>
+        <h2>Certifications</h2>
+        {[
+          { label: "Claude Code 101",                           meta: "Anthropic · mai 2026" },
+          { label: "Data Analysis · Programming for DS",        meta: "Liora — TechAway niv. 2 · juillet 2025" },
+          { label: "Managing in the Era of Automation",         meta: "EU Business School · janvier 2025" },
+          { label: "Gestion de projet — les bases de la réussite", meta: "UC Irvine · Coursera · décembre 2023" },
+          { label: "PSC1 · Pix · EF B2 · Permis B",            meta: "Premiers secours · numérique · anglais · conduite" },
+        ].map(({ label, meta }) => (
+          <div key={label} className="mob-cert">
+            <div className="mob-cert-label">{label}</div>
+            <div className="mob-cert-meta">{meta}</div>
+          </div>
+        ))}
+      </section>
+
+      {/* ── Contact ── */}
+      <section id="mob-contact" className="mob-section mob-contact-section">
+        <p className="mob-eyebrow">IX · Suite</p>
+        <h2>Écrivons<br/><em>la suite.</em></h2>
+        <p className="mob-text">
+          Ouvert aux opportunités de stage, projets et collaborations autour de
+          l'ingénierie, du développement web, de la data et de la gestion de projet.
+        </p>
+        <div className="mob-actions">
+          <a href="mailto:romain.plane@edu.ece.fr" className="mob-btn">✉ romain.plane@edu.ece.fr</a>
+          <a href="https://linkedin.com/in/romain-plane" target="_blank" rel="noopener noreferrer" className="mob-btn ghost">in · LinkedIn</a>
+          <a href="https://github.com/rom1pln" target="_blank" rel="noopener noreferrer" className="mob-btn ghost">⌥ · GitHub</a>
+        </div>
+        <div className="mob-signature">Romain Plane</div>
+        <p className="mob-colophon">ECE Lyon · MMXXVI</p>
+      </section>
+
     </div>
   );
 }
