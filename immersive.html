@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romain Plane — Portfolio Immersif</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="immersive.css">
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────── -->
+  <nav class="m-nav" id="mnav">
+    <span class="m-brand">R<span class="dot">·</span>P</span>
+    <div class="m-nav-links">
+      <a href="#s-parcours">Parcours</a>
+      <a href="#s-engagement">Engagements</a>
+      <a href="#s-projets">Projets</a>
+      <a href="#s-competences">Compétences</a>
+      <a href="#s-contact">Contact</a>
+    </div>
+    <div class="m-nav-right">
+      <a href="index.html" class="m-switch-btn">📖 Livre</a>
+    </div>
+  </nav>
+
+  <!-- ── 00 · HERO ────────────────────────────────────── -->
+  <section class="m-panel" id="s-hero">
+    <div class="hero-media">
+      <!-- Vidéo : vue aérienne d'une ville la nuit (autoplay muted loop) -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://videos.pexels.com/video-files/1610743/1610743-hd_1920_1080_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="hero-gradient"></div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="orb orb-1" data-speed="0.3"></div>
+    <div class="orb orb-2" data-speed="0.6"></div>
+    <div class="orb orb-3" data-speed="0.2"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Étudiant ingénieur · ECE Lyon · 2023 – 2029</p>
+      <h1 class="hero-name">
+        <span class="word-wrap"><span class="word">Romain</span></span>
+        <span class="word-wrap"><span class="word">Plane.</span></span>
+      </h1>
+      <p class="hero-sub">
+        Entre ingénierie, gestion de projet<br>et engagement étudiant à fort impact.
+      </p>
+      <div class="hero-ctas">
+        <a href="mailto:romain.plane@edu.ece.fr" class="mbtn primary">✉ Email</a>
+        <a href="https://linkedin.com/in/romain-plane" target="_blank" rel="noopener" class="mbtn">LinkedIn ↗</a>
+        <a href="https://github.com/rom1pln" target="_blank" rel="noopener" class="mbtn">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-badges">
+      <div class="badge" data-speed="0.4">Corpo OMNES<br><span>VP & Trésorier</span></div>
+      <div class="badge" data-speed="0.6">JEECE<br><span>Resp. intervenants</span></div>
+      <div class="badge" data-speed="0.5">CNJE<br><span>Auditeur-Conseil</span></div>
+      <div class="badge" data-speed="0.35">CGI<br><span>Stage 2025</span></div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="scroll-line"><div class="scroll-fill"></div></div>
+    </div>
+  </section>
+
+  <!-- ── 01 · PARCOURS ────────────────────────────────── -->
+  <section class="m-panel s-dark" id="s-parcours">
+    <div class="parallax-bg" data-parallax="-0.2"></div>
+    <div class="panel-inner">
+      <div class="section-label reveal-up">01 · Parcours</div>
+      <div class="parcours-grid">
+        <div class="school-block">
+          <div class="school-eyebrow reveal-up" style="transition-delay:.1s">Diplôme d'ingénieur</div>
+          <h2 class="school-name reveal-up" style="transition-delay:.2s">ECE<br>Lyon</h2>
+          <p class="school-years reveal-up" style="transition-delay:.25s">2023 — 2029</p>
+          <p class="school-desc reveal-up" style="transition-delay:.3s">Cycle préparatoire intégré puis cycle ingénieur. Développement web, data, électronique, PCB. Projets techniques transversaux en équipe.</p>
+          <div class="chip-row reveal-up" style="transition-delay:.35s">
+            <span class="mchip">C</span><span class="mchip">Python</span><span class="mchip">HTML/CSS</span><span class="mchip">JS</span><span class="mchip">PHP</span><span class="mchip">MySQL</span><span class="mchip">Power BI</span><span class="mchip">Azure</span>
+          </div>
+          <div class="cgi-card tilt-card reveal-up" style="transition-delay:.4s">
+            <div class="cgi-tag">Stage</div>
+            <div class="cgi-title">CGI</div>
+            <div class="cgi-date">Janvier – Février 2025</div>
+            <p>Accompagnement d'un directeur conseil & chef de projet. Gestion opérationnelle, Azure · Power BI · SQL.</p>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <div class="tl-item reveal-right" style="transition-delay:.1s"><span class="tl-year">2029</span><span class="tl-node"></span><span class="tl-ev">Diplôme d'ingénieur (attendu)</span></div>
+          <div class="tl-item reveal-right" style="transition-delay:.18s"><span class="tl-year">2026</span><span class="tl-node"></span><span class="tl-ev">Recherche de stage — ouvert aux opportunités</span></div>
+          <div class="tl-item reveal-right" style="transition-delay:.26s"><span class="tl-year">2025</span><span class="tl-node active"></span><span class="tl-ev">Stage CGI — conseil & data</span></div>
+          <div class="tl-item reveal-right" style="transition-delay:.34s"><span class="tl-year">2024</span><span class="tl-node"></span><span class="tl-ev">1ʳᵉ année cycle ingénieur, projets techniques</span></div>
+          <div class="tl-item reveal-right" style="transition-delay:.42s"><span class="tl-year">2023</span><span class="tl-node"></span><span class="tl-ev">Entrée ECE Lyon · Bac mention bien (Saint-Alyre)</span></div>
+          <div class="tl-item reveal-right" style="transition-delay:.5s"><span class="tl-year">2020</span><span class="tl-node"></span><span class="tl-ev">Brevet mention très bien</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 02 · ENGAGEMENTS ─────────────────────────────── -->
+  <section class="m-panel" id="s-engagement">
+    <div class="panel-inner">
+      <div class="section-label reveal-up">02 · Engagements</div>
+      <div class="eng-grid">
+        <div class="eng-card tilt-card reveal-up" style="transition-delay:.1s">
+          <div class="eng-accent"></div>
+          <div class="eng-org">Corpo OMNES Education Lyon</div>
+          <div class="eng-roles">
+            <div class="eng-role"><span>Vice-Président & Trésorier</span><span class="eng-date">mars 2026 →</span></div>
+            <div class="eng-role"><span>VP & Secrétaire général</span><span class="eng-date">juil. 2025 – mars 2026</span></div>
+          </div>
+          <p class="eng-desc">Représentation de 6 000+ étudiants sur 5 écoles et 2 campus lyonnais. Gestion financière, événementiel, pilotage de la plateforme numérique.</p>
+          <div class="eng-kpi"><span>6 000+</span> étudiants · <span>5</span> écoles</div>
+        </div>
+        <div class="eng-card tilt-card reveal-up" style="transition-delay:.2s">
+          <div class="eng-accent"></div>
+          <div class="eng-org">JEECE</div>
+          <div class="eng-roles">
+            <div class="eng-role"><span>Resp. intervenants & CA</span><span class="eng-date">juil. 2025 →</span></div>
+            <div class="eng-role"><span>Référent Campus Lyon</span><span class="eng-date">sept. 2025 →</span></div>
+            <div class="eng-role"><span>Chef de projet</span><span class="eng-date">déc. 2024 →</span></div>
+            <div class="eng-role"><span>Chargé de mission RH</span><span class="eng-date">juil. 2024 – juin 2025</span></div>
+          </div>
+          <p class="eng-desc">Junior-Entreprise ECE Lyon. RFP, Congrès Régional C.-E. 2026 (200 étudiants · 24 JE), recrutement, outils internes.</p>
+          <div class="eng-kpi"><span>200</span> étudiants · <span>24</span> JE</div>
+        </div>
+        <div class="eng-card tilt-card reveal-up" style="transition-delay:.3s">
+          <div class="eng-accent"></div>
+          <div class="eng-org">CNJE</div>
+          <div class="eng-roles">
+            <div class="eng-role"><span>Auditeur-Conseil Organisationnel</span><span class="eng-date">juil. 2025 →</span></div>
+            <div class="eng-role"><span>Formateur RFP</span><span class="eng-date">sept. 2025 →</span></div>
+          </div>
+          <p class="eng-desc">Audit organisationnel de Junior-Entreprises. Formation des responsables RFP. Processus : Écosystème · Stratégie · RH · Gestion · Déontologie.</p>
+          <div class="eng-kpi">Sélection <span>4,4%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 03 · PROJETS ────────────────────────────────── -->
+  <section class="m-panel s-dark" id="s-projets">
+    <div class="parallax-bg" data-parallax="-0.15"></div>
+    <div class="panel-inner">
+      <div class="section-label reveal-up">03 · Projets</div>
+      <!-- Projet phare -->
+      <div id="proj-featured-wrap"></div>
+      <!-- Autres projets — slider horizontal -->
+      <div class="proj-others-wrap" id="proj-others-outer">
+        <div class="proj-others-label">Autres projets</div>
+        <div class="proj-slider" id="proj-slider"></div>
+        <div class="proj-slider-nav" id="proj-slider-nav">
+          <button class="slider-arrow" id="slider-prev" aria-label="Projet précédent">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="slider-dots" id="slider-dots"></div>
+          <button class="slider-arrow" id="slider-next" aria-label="Projet suivant">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 04 · COMPÉTENCES ─────────────────────────────── -->
+  <section class="m-panel" id="s-competences">
+    <div class="panel-inner">
+      <div class="section-label reveal-up">04 · Compétences & Certifications</div>
+      <div class="comp-layout">
+        <div class="skills-side">
+          <div class="skill-group reveal-up" style="transition-delay:.08s"><div class="skill-cat">Développement</div><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Python</span><span>C</span><span>Git</span></div></div>
+          <div class="skill-group reveal-up" style="transition-delay:.14s"><div class="skill-cat">Data & Cloud</div><div class="skill-tags"><span>SQL</span><span>Power BI</span><span>MS Azure</span><span>Excel</span><span>GitHub</span><span>Notion</span></div></div>
+          <div class="skill-group reveal-up" style="transition-delay:.2s"><div class="skill-cat">Design & Création</div><div class="skill-tags"><span>Canva</span><span>Figma</span><span>Office 365</span><span>Adobe Premiere</span></div></div>
+          <div class="skill-group reveal-up" style="transition-delay:.26s"><div class="skill-cat">Gestion de projet</div><div class="skill-tags"><span>Agile</span><span>Scrum</span><span>Lean</span><span>Pilotage</span><span>Commercial</span></div></div>
+          <div class="skill-group reveal-up" style="transition-delay:.32s"><div class="skill-cat">Leadership</div><div class="skill-tags"><span>Audit</span><span>Formation</span><span>RH</span><span>Événementiel</span><span>Partenariats</span></div></div>
+          <div class="skill-group reveal-up" style="transition-delay:.38s"><div class="skill-cat">Langues</div><div class="skill-tags"><span>🇫🇷 Natif</span><span>🇬🇧 Anglais B2</span><span>🇪🇸 Espagnol B1</span></div></div>
+        </div>
+        <div class="certs-side">
+          <div class="cert-item reveal-right" style="transition-delay:.1s"><div class="cert-label">Claude Code 101</div><div class="cert-meta">Anthropic · mai 2026</div></div>
+          <div class="cert-item reveal-right" style="transition-delay:.16s"><div class="cert-label">Data Processing & Generative AI Fundamental</div><div class="cert-meta">Liora · juillet 2025</div></div>
+          <div class="cert-item reveal-right" style="transition-delay:.22s"><div class="cert-label">Data Analysis · Programming for Data Science</div><div class="cert-meta">Liora — TechAway niv. 2 · juillet 2025</div></div>
+          <div class="cert-item reveal-right" style="transition-delay:.28s"><div class="cert-label">Managing in the Era of Automation</div><div class="cert-meta">EU Business School · janvier 2025</div></div>
+          <div class="cert-item reveal-right" style="transition-delay:.34s"><div class="cert-label">Gestion de projet — les bases de la réussite</div><div class="cert-meta">UC Irvine · Coursera · décembre 2023</div></div>
+          <div class="cert-item reveal-right" style="transition-delay:.4s"><div class="cert-label">Lean · Agile · RH · Comptabilité</div><div class="cert-meta">Skillsoft — 10 modules</div></div>
+          <div class="cert-item reveal-right" style="transition-delay:.46s"><div class="cert-label">PSC1 · Pix · EF B2 · Permis B · VSS</div><div class="cert-meta">Premiers secours · numérique · anglais</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 05 · CONTACT ─────────────────────────────────── -->
+  <section class="m-panel s-dark contact-panel" id="s-contact">
+    <div class="hero-gradient"></div>
+    <div class="hero-overlay" style="opacity:.6"></div>
+    <div class="panel-inner contact-inner">
+      <div class="section-label reveal-up">05 · Contact</div>
+      <h2 class="contact-title reveal-up" style="transition-delay:.1s">Écrivons<br><em>la suite.</em></h2>
+      <p class="contact-lede reveal-up" style="transition-delay:.2s">Ouvert aux opportunités de stage, projets et collaborations autour de l'ingénierie, du développement web, de la data et de la gestion de projet.</p>
+      <div class="contact-links reveal-up" style="transition-delay:.3s">
+        <a href="mailto:romain.plane@edu.ece.fr" class="contact-link primary">✉ romain.plane@edu.ece.fr</a>
+        <a href="https://linkedin.com/in/romain-plane" target="_blank" rel="noopener" class="contact-link">LinkedIn → linkedin.com/in/romain-plane</a>
+        <a href="https://github.com/rom1pln" target="_blank" rel="noopener" class="contact-link">GitHub → github.com/rom1pln</a>
+      </div>
+      <div class="contact-sig reveal-up" style="transition-delay:.4s">Romain Plane</div>
+    </div>
+  </section>
+
+  <!-- ── PROJECT DETAIL PANEL ──────────────────────── -->
+  <div class="proj-panel-overlay" id="proj-panel-overlay" aria-hidden="true"></div>
+  <aside class="proj-panel" id="proj-panel" role="dialog" aria-modal="true" aria-label="Fiche projet" aria-hidden="true">
+    <div class="proj-panel-topbar">
+      <button class="proj-panel-close-btn" id="proj-panel-close" aria-label="Fermer la fiche">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="proj-panel-content" id="proj-panel-content"></div>
+  </aside>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="immersive.js"></script>
+</body>
+</html>
